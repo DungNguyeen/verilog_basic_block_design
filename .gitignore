@@ -1,20 +1,17 @@
-# Vivado generated
+# Vivado
 *.jou
 *.log
 *.str
-
-.cache/
-.hw/
-.ip_user_files/
 
 **/*.cache/
 **/*.hw/
 **/*.runs/
 **/*.sim/
-**/*_ip_user_files/
+**/*.gen/
 
-# Temporary
-*.tmp
+**/*.ip_user_files/
+
+**/.Xil/
 
 # VSCode
 .vscode/
