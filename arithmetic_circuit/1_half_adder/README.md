@@ -10,4 +10,6 @@
      sum = a XOR b
      carry = a AND b
 
- ![Sơ đồ mạch logic](..\docs\images\half_adder_logic_circuit.png)
+<p align="center">
+  <img src="../docs/images/half_adder_logic_circuit.png" width="500">
+</p>

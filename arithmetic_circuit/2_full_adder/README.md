@@ -45,4 +45,6 @@
             3 biểu diễn theo dạng nhị phân là 11
             => o_carry=1 ; o_sum=1
 
-![Sơ đồ mạch logic](..\docs\images\Full_Adder.png)
+<p align="center">
+  <img src="../docs/images/Full_Adder.png" width="500">
+</p>
