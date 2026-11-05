@@ -44,3 +44,5 @@
             o_sum = i_a + i_b + i_carry = 1+1+1 = 3
             3 biểu diễn theo dạng nhị phân là 11
             => o_carry=1 ; o_sum=1
+
+![Sơ đồ mạch logic](..\docs\images\Full_Adder.png)
