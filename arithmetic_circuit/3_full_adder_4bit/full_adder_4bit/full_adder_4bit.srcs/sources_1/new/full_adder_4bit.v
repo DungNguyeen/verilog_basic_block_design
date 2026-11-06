@@ -23,13 +23,14 @@
 module full_adder_4bit(
     input [3:0] i_a,
     input [3:0] i_b,
+    input i_carry,
     output [3:0] o_sum,
     output o_carry
     );
     wire carry1, carry2, carry3;
     full_adder u1 (.i_a(i_a[0]),
                    .i_b(i_b[0]),
-                   .i_carry(1'b0),
+                   .i_carry(i_carry),
                    .o_sum(o_sum[0]),
                    .o_carry(carry1)
                    );

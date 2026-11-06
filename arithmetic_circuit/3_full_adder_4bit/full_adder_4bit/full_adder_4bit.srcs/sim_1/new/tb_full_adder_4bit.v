@@ -23,18 +23,20 @@
 module tb_full_adder_4bit;
     reg [3:0] a;
     reg [3:0] b;
+    reg carryin;
     wire [3:0]  sum;
-    wire carry;
+    wire carryout;
     
     full_adder_4bit dut (.i_a(a),
                          .i_b(b),
+                         .i_carry(carryin),
                          .o_sum(sum),
-                         .o_carry(carry)
+                         .o_carry(carryout)
                          );
     integer i, j;
     initial begin
        #10
-        a=4'b0000; b=4'b0000;
+        a=4'b0000; b=4'b0000; carryin=1'b0;
         for(i=0; i<=4'd15; i=i+1)begin
             for(j=0; j<=4'd15; j=j+1)begin
                 a=i;
