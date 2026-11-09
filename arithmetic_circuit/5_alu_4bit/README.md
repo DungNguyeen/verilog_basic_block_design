@@ -1,6 +1,6 @@
 # 🔧 4-Bit Arithmetic Logic Unit (ALU)
 
-## 📖 Overview
+## 📖 Tổng quan
 
 Đây là dự án thiết kế một bộ xử lý số học và logic (Arithmetic Logic Unit - ALU) 4-bit bằng Verilog HDL.
 
@@ -10,15 +10,15 @@ Dự án được phát triển bằng Vivado 2025.2 và thử nghiệm trên n�
 
 ---
 
-## 🎯 Design Requirements
+## 🎯 Yêu cầu thiết kế
 
 ### Inputs
 
 |  Signal  |  Width  | Description |
 |----------|---------|-------------|
-|   i_a    |  4-bit  |  Operand A  |
-|   i_b    |  4-bit  |  Operand B  |
-|   i_sel  |  3-bit  |  Function selection |
+|   i_a    |  4-bit  |  Toán hạng A  |
+|   i_b    |  4-bit  |  Toán hạng B  |
+|   i_sel  |  3-bit  |  Chọn chức năng |
 
 ### Outputs
 
@@ -30,7 +30,7 @@ Dự án được phát triển bằng Vivado 2025.2 và thử nghiệm trên n�
 
 ---
 
-## ⚙️ Supported Operations
+## ⚙️ Các chức năng
 
 | SEL | Operation | Description |
 |-----|-----------|-------------|
@@ -45,7 +45,7 @@ Dự án được phát triển bằng Vivado 2025.2 và thử nghiệm trên n�
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Kiến trúc
 
 ```text
              +------------------+
@@ -57,29 +57,30 @@ Dự án được phát triển bằng Vivado 2025.2 và thử nghiệm trên n�
              +------------------+
 ```
 
-### Internal Blocks
+### Các khối nội bộ
 
-- Arithmetic Unit
-  - Addition
-  - Subtraction
-  - Carry / Borrow generation
+- Arithmetic Circuit
+  - haft_adder
+  - full_adder
+  - full_adder_4bit
+  - sull_subtractor_4bit
 
-- Logic Unit
+- Bộ phận Logic 
   - AND
   - OR
   - XOR
   - NOT
 
-- Comparison Unit
-  - Equality detector
+- Bộ phận so sánh
+  - So sánh bằng nhau
 
-- Status Flags
+- Các cờ trạng thái
   - Carry Out
-  - Zero Flag
+  - Zero 
 
 ---
 
-## 🛠 Development Environment
+## 🛠 Môi trường phát triển
 
 |    Item    | Version          |
 |------------|------------------|
@@ -112,6 +113,4 @@ Dự án được phát triển bằng Vivado 2025.2 và thử nghiệm trên n�
 
 Nguyễn Ngọc Dũng
 
-Digital Logic Design Project
-
-2026
+9/11/2026
